@@ -3,7 +3,7 @@ const { createApp } = Vue;
 createApp({
     data() {
         return {
-            message: "ciao",
+            activeImg:0,
             slides : [
                 {
                     image: './assets/img/img/01.webp',
