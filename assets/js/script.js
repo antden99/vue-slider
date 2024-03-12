@@ -30,16 +30,22 @@ createApp({
 
         }
     },
-    methods:{
-        prev(){
+    methods: {
+        prev() {
+            console.log(this.slides.length)
+            console.log("immagine precedente")
             this.activeImg--
-            if(this.activeImg < 0){
-                this.activeImg= this.slides.lenght -1
+            if (this.activeImg < 0) {
+
+                this.activeImg = this.slides.length - 1
             }
         },
-        next(){
+        next() {
+            console.log(this.slides.length)
+
+            console.log("immagine successiva")
             this.activeImg++
-            if(this.activeImg === this.slides.lenght){
+            if (this.activeImg === this.slides.length) {
                 this.activeImg = 0;
             }
         },
