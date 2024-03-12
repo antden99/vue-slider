@@ -17,12 +17,13 @@
                 <div class="text">
                     <h3>{{slides[activeImg].title}}</h4>
                         <p>{{slides[activeImg].text}}</p>
-                        
+
                 </div>
-                <div class="thumbs">
-                    <div class="thumb" v-for="slide in slides">
-                        <img :src="slide.image" alt="">
-                    </div>
+
+            </div>
+            <div class="thumbs">
+                <div class="thumb" v-for="slide in slides">
+                    <img :src="slide.image" alt="">
                 </div>
             </div>
 
